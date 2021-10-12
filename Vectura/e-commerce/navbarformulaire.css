@@ -1,0 +1,249 @@
+nav {
+    width: 100%;
+    background-color: black;
+    /* Couleur de la NAVBAR */
+    z-index: 0;
+}
+
+nav>ul {
+    /* LIEN DES UL */
+    margin: 0px;
+    padding: 0px;
+}
+
+nav>ul::after {
+    content: "";
+    display: table;
+    /* COULEUR DE */
+    clear: both;
+    /* MODIFIER */
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+nav>ul>li>a {
+    padding: 20px 57px;
+    /* ecart entre les choix MODIFIER */
+    color: white;
+    /* COULEUR DE l'ECRITURE DE LA NAVBAR*/
+}
+
+
+}
+nav>ul>li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+nav li {
+    /* LIEN DES LI */
+    
+    list-style-type: none;
+}
+.submenu {
+    display: none;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+.submenu li {
+    border-bottom: 1px solid #CCC;
+}
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    /* couleur de l'écriture des sous menu */
+    
+    width: 270px;
+}
+.menu-accueil:hover,.menu-modele:hover,.menu-contact:hover,.menu-inscription:hover,.menu-connexion:hover,.menu-deconnexion:hover,.menu-profil:hover {
+    background-color: rgb(21,32,43);
+}
+.menu-accueil .submenu {
+    background-color: white;
+    width: 100%;
+}
+.menu-modele .submenu {
+    background-color: white;
+    width: 100%;
+}
+.menu-contact .submenu {
+    background-color: white;
+    width: 100%;
+}
+.submenu li:hover a {
+    color: #EEE;
+    /* COULEUR DE L'ECRITURE SUR LE SOUS MENU */
+    /* font-weight: bold;                          /* ECRITURE en GRAS */
+}
+.menu-contact .submenu li:hover a {
+    color: white;
+}
+.menu-accueil .submenu li:hover,.menu-modele .submenu li:hover,.menu-contact .submenu li:hover  {
+    background-color: darkred;
+}
+.menu-accueil {
+    left: 0%;
+}
+.menu-modele {
+    left: 0%;
+}
+.menu-contact {
+    left: 0%;
+}
+.menu-inscription {
+    right: -42%;
+}
+.menu-connexion {
+    right: -42%;
+}
+.menu-deconnexion {
+    right: -53%;
+}
+.menu-profil {
+    right: -26%;
+}
+nav label {
+    display: none;
+}
+nav input[type=chekbox]:checked~ul {
+    display: block;
+}
+
+/* MENU FIN */
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.contenu {
+    /* grow shrink basis */
+    
+    flex: 1 0 auto;
+}
+.contenu p {
+    padding: 5vw 10vw;
+    text-align: justify;
+}
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background: black;
+    color: white;
+}
+.contenu-footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-horaires h3,
+.footer-medias h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.footer-contact p {
+    padding: 5px 0;
+}
+
+/* Services */
+.liste-services,
+.liste-horaires,
+.liste-media {
+    list-style-type: none;
+}
+.liste-services li {
+    padding: 2px 0;
+}
+.liste-services a {
+    text-decoration: none;
+    color: white;
+}
+.liste-services a:hover,
+.liste-media a:hover {
+    color: rgb(158, 3, 3);
+}
+
+/* Medias */
+.liste-media {
+    position: relative;
+    right: 10px;
+}
+.liste-media img {
+    width: 25px;
+    margin: 10px 10px;
+}
+.liste-media a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1300px) {
+    .contenu-footer {
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    
+    .bloc {
+        width: 40%;
+        margin: 0 0;
+    }
+    
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .contenu-footer {
+        width: 320px;
+    }
+    
+    .bloc {
+        width: 300px;
+        margin: 30px 30px;
+    }
+    
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    
+    .bloc:nth-child(1) {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,156 @@
+                                                    /* MENU DEBUT */
+body{
+    font-family: Verdana, Calibri, sans-serif;   /* POLICE */
+    margin: 0px;
+    padding: 0px;
+    background-image: url("/img/intro.png");             /* IMAGE DE FOND - RAJOUTER*/
+    background-size: 100%;
+    background-repeat: no-repeat;                           /*RAJOUTER*/
+    
+    
+    /*   background-image: url("img/logo.jpg");   */
+}
+
+nav{
+    width: 100%;
+    background-color: black;                        /* Couleur de la NAVBAR */
+}
+
+nav > ul{                                         /* LIEN DES UL */
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after{
+    content: "";
+    display: table;                             /* COULEUR DE */
+    clear: both;                                /* MODIFIER */
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li >a{
+    padding: 20px 57px;                               /* ecart entre les choix MODIFIER */
+    color: white;                                 /* COULEUR DE l'ECRITURE DE LA NAVBAR*/
+}
+
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+nav li{                                             /* LIEN DES LI */
+    list-style-type: none;
+}
+
+.submenu{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;                                    /* couleur de l'écriture des sous menu */
+    width: 270px;
+}
+
+.menu-accueil:hover{
+    border-top: 5px solid white;
+    background-color: black;
+}
+
+.menu-modele:hover{
+    border-top: 5px solid white;                       /* COULEUR DE MODELE */
+    background-color:  black;
+}
+
+.menu-contact:hover{
+    border-top: 5px solid white;                       /* COULEUR DE CONTACT */
+    background-color: black;
+}
+
+.menu-inscription:hover{
+    border-top: 5px solid white;                       /* COULEUR D INSCRIPTION */
+    background-color:  black;
+}
+
+.menu-connexion:hover{
+    border-top: 5px solid white;                        /* COULEUR DE CONNEXION*/
+    background-color:  black;
+}
+
+.menu-accueil .submenu{
+    background-color: white;
+    width: 100%;
+}
+
+.menu-modele .submenu{
+    background-color: white;
+    width: 100%;
+}
+
+.menu-contact .submenu{
+    background-color: white;
+    width: 100%;
+}
+
+.submenu li:hover a{
+    color: #EEE;                            /* COULEUR DE L'ECRITURE SUR LE SOUS MENU */
+    /* font-weight: bold;                          /* ECRITURE en GRAS */
+}
+.menu-contact .submenu li:hover a{
+    color: black;
+}
+
+.menu-accueil .submenu li:hover{
+    background-color: red;
+}
+.menu-modele .submenu li:hover{
+    background-color: blue;
+}
+.menu-contact .submenu li:hover{
+    background-color: yellow;
+}
+
+.menu-accueil{
+    left: 0%;
+}
+.menu-modele{
+    left: 0%;
+}
+.menu-contact{
+    left: 0%;
+}
+.menu-inscription{
+    right: -41%;      
+}
+.menu-connexion{
+    right: -41%;      
+}
+
+nav label{
+    display: none;
+}
+
+nav input[type=chekbox]:checked ~ ul{
+    display: block;
+}                                                                     /* MENU FIN */

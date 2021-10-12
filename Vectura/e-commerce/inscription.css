@@ -1,0 +1,111 @@
+/* INSCRIPTION DEBUT */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/intro-inscription.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: Verdana, Calibri, sans-serif;
+}
+
+section.login-inscription {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(202, 202, 202, 0.8);
+    /* COULEUR DE FOND DE LA PAGE */
+}
+
+.loginbox {
+    width: 470px;
+    height: 680px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+h1 {
+    margin: -5px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="email"],
+input[type="password"],
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    margin-left: 10%;
+    height: 40px;
+    width: 80%;
+    background: red;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="checkbox"] {
+    margin-left: -20px;
+    width: 15px;
+}
+
+.loginbox button[type="submit"] {
+    border: none;
+    outline: none;
+    margin-left: 10%;
+    height: 40px;
+    width: 80%;
+    background: red;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover {
+    color: #ffc107;
+}

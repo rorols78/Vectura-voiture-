@@ -1,0 +1,234 @@
+/* MENU DEBUT */
+
+body {
+    font-family: Verdana, Calibri, sans-serif;
+    /* POLICE */
+    margin: 0px;
+    padding: 0px;
+    /* IMAGE DE FOND - RAJOUTER*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*RAJOUTER*/
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    /* Couleur de la NAVBAR */
+    z-index: 0;
+}
+
+nav>ul {
+    /* LIEN DES UL */
+    margin: 0px;
+    padding: 0px;
+}
+
+nav>ul::after {
+    content: "";
+    display: table;
+    /* COULEUR DE */
+    clear: both;
+}
+
+nav>ul>li {
+    float: left;
+    position: relative;
+}
+
+nav>ul>li>a {
+    padding: 20px 57px;
+    /* ecart entre les choix MODIFIER */
+    color: white;
+    /* COULEUR DE l'ECRITURE DE LA NAVBAR*/
+}
+
+
+}
+nav>ul>li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+nav li {
+    /* LIEN DES LI */
+    
+    list-style-type: none;
+}
+.submenu {
+    display: none;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+.submenu li {
+    border-bottom: 1px solid #CCC;
+}
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    /* couleur de l'écriture des sous menu */
+    
+    width: 270px;
+}
+.menu-accueil:hover,
+.menu-modele:hover,
+.menu-contact:hover,
+.menu-inscription:hover,
+.menu-connexion:hover,
+.menu-deconnexion:hover,
+.menu-profil:hover {
+    background-color: rgb(21, 32, 43);
+}
+.menu-accueil .submenu,
+.menu-modele .submenu,
+.menu-contact .submenu {
+    background-color: white;
+    width: 100%;
+}
+.submenu li:hover a {
+    color: #EEE;
+    /* COULEUR DE L'ECRITURE SUR LE SOUS MENU */
+    /* font-weight: bold;                          /* ECRITURE en GRAS */
+}
+.menu-contact .submenu li:hover a {
+    color: white;
+}
+.menu-accueil .submenu li:hover,
+.menu-modele .submenu li:hover,
+.menu-contact .submenu li:hover {
+    background-color: rgb(158, 3, 3);
+}
+.menu-accueil {
+    left: 0%;
+}
+.menu-modele {
+    left: 0%;
+}
+.menu-contact {
+    left: 0%;
+}
+.menu-inscription {
+    right: -42%;
+}
+.menu-connexion {
+    right: -42%;
+}
+.menu-deconnexion {
+    right: -53%;
+}
+.menu-profil {
+    right: -26%;
+}
+nav label {
+    display: none;
+}
+nav input[type=chekbox]:checked~ul {
+    display: block;
+}
+
+/* MENU FIN */
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.contenu {
+    /* grow shrink basis */
+    
+    flex: 1 0 auto;
+}
+.contenu p {
+    padding: 5vw 10vw;
+    text-align: justify;
+}
+.cookie-alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px 15px;
+    width: 280px;
+    z-index: 100;
+}
+.cookie-alert a {
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 8px auto 0 auto;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #46A2D9;
+    color: #46A2D9;
+    transition: all .3s ease;
+}
+.cookie-alert a:hover {
+    background: #46A2D9;
+    color: #2f2f2f;
+}
+@media only screen and (max-width:480px) {
+    .cookie-alert {
+        text-align: center;
+        left: 0;
+        right: 0;
+        ;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 10px 30px;
+    }
+}
+
+/*COOKIE*/
+.cookie-alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    background: #2f2f2f;
+    color: #fff;
+    padding: 10px 15px;
+    width: 280px;
+    z-index: 100;
+}
+.cookie-alert a {
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 8px auto 0 auto;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #46A2D9;
+    color: #46A2D9;
+    transition: all .3s ease;
+}
+.cookie-alert a:hover {
+    background: #46A2D9;
+    color: #2f2f2f;
+}
+@media only screen and (max-width:480px) {
+    .cookie-alert {
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 10px 30px;
+    }
+}
